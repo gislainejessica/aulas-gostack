@@ -1,5 +1,6 @@
-const some = (a, d) => {
-  return a + d;
-}
+import React from 'react';
+import { render } from 'react-dom';
 
-console.log(some(1, 2));
+import App from './App';
+
+render(<App />, document.getElementById('app'))
