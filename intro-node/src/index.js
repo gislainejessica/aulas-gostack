@@ -1,11 +1,13 @@
 const express = require('express')
 const { isUuid } = require('uuidv4')
 const { v4 } = require('uuid')
+const cors = require('cors')
+
 const app = express()
 
 app.use(express.json())
 
-
+app.use(cors())
 const projects = []
 
 function logRequest(req, res, next) {
