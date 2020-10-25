@@ -5,7 +5,7 @@ class Appointment {
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
-  @Column('string')
+  @Column()
   provider: string;
 
   @Column('time with time zone')
